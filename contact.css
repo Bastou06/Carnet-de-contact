@@ -1,0 +1,48 @@
+.titre {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Square Peg", cursive;
+  font-size: 130px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-image: url(./bg.jpg);
+}
+
+#adresse {
+  width: 400px;
+}
+
+#ajouter {
+  margin-top: 50px;
+  font-size: 25px;
+  background-color:
+}
+
+input {
+  margin: 10px;
+}
+
+#form {
+  background-color: rgba(0, 0, 0, 0.474);
+  color:limegreen;
+  padding: 10px;
+  font-size: 20px;
+  display: inline-grid;
+}
+
+.contactList {
+  background-color: rgba(0, 0, 0, 0.577);
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+}
+
+p {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}

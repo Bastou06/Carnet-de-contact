@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnet de contact</title>
+
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;500&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    />
+  </head>
+  <body>
+    <header>
+      <title class="titre">Carnet de contacts</title>
+    </header>
+    <main>
+      <form id="form">
+        <label for="categorieSelect"
+          >Etes-vous un particulier ou un professionnel?</label
+        >
+        <br />
+
+        <select id="selection" name="selection">
+          <option value="">--Choisissez une option ci-dessous--</option>
+          <option value="1">Particulier</option>
+          <option value="2">Professionnel</option>
+        </select>
+
+        <br />
+        <br />
+
+        <input type="text" name="nom" placeholder="Votre nom" value="Puaud" />
+        <input
+          type="text"
+          name="prenom"
+          placeholder="Votre prénom"
+          value="Arnaud"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Votre email"
+          value="contact@bonnie-and-cloud.com"
+        />
+        <input
+          type="text"
+          name="phone"
+          placeholder="Votre numéro"
+          value="0799876543"
+        />
+
+        <br />
+
+        <input
+          id="adresse"
+          type="text"
+          name="adressePostale"
+          placeholder="Votre adresse postale"
+        />
+
+        <input
+          id="siren"
+          type="text"
+          name="siren"
+          placeholder="indiquez votre numéro SIREN"
+        />
+        <br />
+        <input id="ajouter" type="submit" value="Ajouter" />
+
+        <br />
+        <label for="categorieSelect">Filtre de recherche</label>
+        <br />
+        <select id="filtre" name="filtre">
+          <option value="">--Critères de recherche--</option>
+          <option value="perso">Particulier</option>
+          <option value="pro">Professionnel</option>
+        </select>
+        <br />
+      </form>
+
+      <div class="contactList"></div>
+
+      <script src="contact.js"></script>
+    </main>
+  </body>
+</html>
